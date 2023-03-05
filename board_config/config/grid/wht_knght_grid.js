@@ -1,7 +1,24 @@
 export const wht_knght_grid = {};
 
+wht_knght_grid['a8'] = ['c7', 'b6'];
 wht_knght_grid['b1'] = ['a3', 'c3', 'd2'];
 wht_knght_grid['a3'] = ['b5', 'c4', 'c2'];
-wht_knght_grid['a8'] = ['c7', 'b6'];
+wht_knght_grid['g1'] = ['f3', 'h3', 'e2'];
+wht_knght_grid['g4'] = ['e3', 'h2', 'e5', 'h6'];
+wht_knght_grid['e3'] = ['g4', 'g2', 'd5', 'c2'];
+wht_knght_grid['e3'] = ['g4', 'g2', 'd5', 'c2'];
+wht_knght_grid['d4'] = ['f3', 'e2', 'b3', 'c2'];
 wht_knght_grid['b5'] = ['c7', 'a3', 'd4', 'c3'];
+wht_knght_grid['h6'] = ['g8', 'f7', 'f5', 'g4'];
+wht_knght_grid['f3'] = ['e5', 'h2', 'g1', 'd4'];
+wht_knght_grid['e5'] = ['f3', 'f7', 'd7', 'd3', 'c4', 'c6', 'g6', 'g4'];
+wht_knght_grid['g5'] = ['e6', 'e4', 'g3', 'h7', 'h3'];
+wht_knght_grid['c4'] = ['a5', 'a3', 'b2', 'd6', 'e3'];
+wht_knght_grid['c6'] = ['d4', 'b4', 'e7', 'a7', 'a5'];
+wht_knght_grid['d3'] = ['e1', 'c1', 'f4', 'c5', 'b2'];
+wht_knght_grid['c3'] = ['b1', 'b5', 'd1', 'd5', 'e2'];
+wht_knght_grid['b6'] = ['a4', 'c4', 'c8', 'a8', 'd5', 'd7'];
 wht_knght_grid['c7'] = ['b5', 'a8', 'e6', 'd5', 'a6', 'e8'];
+wht_knght_grid['e4'] = ['c5', 'c3', 'd2', 'f2', 'f6', 'g5'];
+wht_knght_grid['d5'] = ['b6', 'b4', 'c3', 'c7', 'e7', 'e3', 'f6', 'f4'];
+wht_knght_grid['c5'] = ['b7', 'b3', 'a4', 'a6', 'e4', 'e6', 'd7', 'd3'];
