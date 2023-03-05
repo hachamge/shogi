@@ -1,5 +1,4 @@
 import { rtrn_shift_grid } from "./grid/generate.js";
-import { wht_knght_grid } from "./grid/wht_knght_grid.js";
 
 var prv_sqr;
 var sqrsTo_hght;
