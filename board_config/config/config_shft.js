@@ -67,6 +67,7 @@ function erase({ nxt_shft }) {
 function re_shft_erase({ nxt_sqr }) {
   erase_audio.play();
   nxt_sqr.children[0].src = prv_sqr.children[0].src;
+  nxt_sqr.children[0].alt = prv_sqr.children[0].alt;
   prv_sqr.children[0].remove();
   un_en_chk();
 }
