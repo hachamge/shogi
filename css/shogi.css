@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+
+body {
+	/**
+		src: https://mycolor.space/gradient3?ori=to+right&hex=%23D16BA5&hex2=%232856AB&hex3=%235FFBF1&submit=submit
+	*/
+	background-size: cover;
+	background-image: linear-gradient(to right, #d16ba5, #bc65aa, #a460ad, #885daf, #675aaf, #5468bd, #3975c7, #0082cf, #00a2e2, #00c1ed, #00dff1, #5ffbf1);	
+}
+
+/** squares config 520x520 */
+.shogi {
+	cursor: default;
+	font-size: 60px;
+	border-spacing: 0;
+	text-align: center;
+	border-collapse: collapse;
+	font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+/** square heading: h1/c1 etc */
+.shogi th {
+	font-size: 20px;
+	font-family: inherit;
+}
+
+.shogi th img {
+	width: 55px;
+	height: 55px;	
+}
+
+/** square rule:65x65 */ 
+.shogi td {
+	width: 65px;
+	height: 65px;
+	transition: 1s;
+	font-size: 25px;
+	box-sizing: border-box;
+	background-color: red;
+}
+
+/** square: knght/kng etc */
+.shogi td img {
+	top: 7px;
+	width: 45px;
+	height: 45px;
+	transition: 2s;
+	position: relative;	
+}
+
+/** sound audio: shfting/erasing pns' */
+:is(#shft, #erase) {
+	display: none;
+}
