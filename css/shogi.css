@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
 
+:root {
+	--border-bg: white;
+}
+
 body {
 	/**
 		src: https://mycolor.space/gradient3?ori=to+right&hex=%23D16BA5&hex2=%232856AB&hex3=%235FFBF1&submit=submit
@@ -16,6 +20,7 @@ body {
 	text-align: center;
 	border-collapse: collapse;
 	font-family: 'Ubuntu Condensed', sans-serif;
+	/** background-color: var(--border-bg); **/
 }
 
 /** square heading: h1/c1 etc */
@@ -26,7 +31,8 @@ body {
 
 .shogi th img {
 	width: 55px;
-	height: 55px;	
+	height: 55px;
+	margin-right: 5px;
 }
 
 /** square rule:65x65 */ 
