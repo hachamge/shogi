@@ -14,7 +14,7 @@ export function en_sqr_hght() {
 	}
 }
 
-function convertPointToSquare({point}) {
+export function convertPointToSquare({point}) {
 	return document.getElementById(point);
 }
 
@@ -35,7 +35,7 @@ function hght_sqrs() {
 }
 
 // chk if there is any pn in sqr thru:id
-export function chdrn_sqr_chk({ id }) {
+export function chdrn_sqr_chk({id}) {
   const sqr = document.getElementById(id);
   if (sqr) return sqr.children[0] instanceof HTMLImageElement ? true : false;
 }
