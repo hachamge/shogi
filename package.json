@@ -3,6 +3,7 @@
     "test": "jest"
   },
   "devDependencies": {
+    "frappe-charts": "^1.6.2",
     "free-translate": "^0.6.1",
     "jest": "^29.4.3"
   }
