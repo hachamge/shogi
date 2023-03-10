@@ -1,8 +1,9 @@
-import { Chart } from '../../node_modules/frappe-charts/dist/frappe-charts.min.esm.js';
+import { graph } from './graph.js';
 
 export class coordinate_graph {
 	constructor (id) {
 		this.id = id;
+		this.graph = graph;
 		this.graphs = new Array();
 		this.pieces = ['knght', 'kng', 'rook', 'bishop', 'queen', 'pawn'];
 	} 
@@ -39,32 +40,5 @@ export class coordinate_graph {
 		this.graphs.push(div);
 		document.querySelector('.shogi').append(div);
 		this.graph({id:'#graph'});
-	}
-
-	graph({id}) {
-		const data = {
-    labels: ["a", "b", "c", "d",
-        "e", "f", "g", "h"
-    ],
-    datasets: [
-        {
-            name: "knght Data", type: "line",
-            values: [25, 40, 30, 35, 8, 52, 17, -4]
-        },
-    ]
-}
-
-const chart = new Chart(id, {  // or a DOM element,
-    
-		lineOptions: {
-			regionFill: 1,
-			hideDots: 1
-		},
-    title: "knght coordinate points",
-    data: data,
-    type: 'axis-mixed', // or 'bar', 'line', 'scatter', 'pie', 'percentage'
-    height: 250,
-    colors: ['#4B0082', '#743ee2']
-})
-	}
+	}	
 }
