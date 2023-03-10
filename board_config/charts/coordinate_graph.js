@@ -40,6 +40,6 @@ export class coordinate_graph {
 		div.prepend(input);
 		this.graphs.push(div);
 		document.querySelector('.shogi').append(div);
-		this.graph({id:'#graph'});
+		this.graph({id:`#${this.id}`});
 	}	
 }

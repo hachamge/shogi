@@ -1,6 +1,6 @@
 import { Chart } from "../../node_modules/frappe-charts/dist/frappe-charts.min.esm.js";
 
-export function graph({ id }) {
+export function graph({id}) {
   const data = {
     labels: ["a", "b", "c", "d", "e", "f", "g", "h"],
     datasets: [
