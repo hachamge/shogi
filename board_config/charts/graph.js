@@ -9,25 +9,32 @@ export function graph({ id }) {
         type: "line",
         values: [25, 40, 30, 35, 8, 52, 17, -4],
       },
+			{
+        name: "rook Data",
+        type: "line",
+        values: [20, 15, 10, 22, 8, 40, 33, -4],
+      }
     ],
   };
 
   const chart = new Chart(id, {
-    // or a DOM element,
-
-    lineOptions: {
-      regionFill: 1,
-      hideDots: 1,
-    },
+    lineOptions: rtrn_lineOptions(),
     axisOptions: {
       xIsSeries: true,
       xAxisMode: "tick",
-      //yAxisMode: "span"
     },
     title: "knght coordinate points",
     data: data,
     type: "axis-mixed", // or 'bar', 'line', 'scatter', 'pie', 'percentage'
     height: 250,
-    colors: ["#4B0082", "#743ee2"],
+    colors: ["#4B0082", "#FFD700"],
   });
+}
+
+function rtrn_lineOptions() {
+	return {
+		regionFill: 1,
+		hideDots: 1,
+		heatline: 1,
+	};
 }

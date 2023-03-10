@@ -28,6 +28,7 @@ export class coordinate_graph {
 	 	const input = document.createElement('input');
 
 		graph.setAttribute('id', this.id);
+		input.setAttribute('value', 'knight');
 		time.innerHTML = 'updated 2 min ago';
 		div.setAttribute('class', 'coordinate_graph');
 		input.setAttribute('list', 'coordinate_graph#1');
