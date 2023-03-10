@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
 
+:root {
+	--gray: #D3D3D3;
+}
+
 .coordinate_graph {
 	width: 300px;
 	padding: 15px;
@@ -12,8 +16,19 @@
 	font-family: 'Ubuntu Condensed', sans-serif;
 }
 
+.coordinate_graph > p {
+	left: 15px;
+	color: gray;
+	float: left;
+	position: relative;
+}
+
 .coordinate_graph > input {
+	left: -45px;
+	border: none;
+	padding: 5px;
 	color: #4B0082;
+	position: relative;
 	font-weight: bolder;
-	border: 2px groove #000000;
+	background-color: var(--gray);
 }
