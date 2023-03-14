@@ -26,6 +26,7 @@ class host {
     this.tagsTo_create["msg"].innerText = this.msg;
     this.tagsTo_create["shft"].innerText = this.shift;
     this.tagsTo_create["timeAgo"].innerText = this.timeAgo;
+    this.tagsTo_create["img"].setAttribute('loading', 'lazy');
   }
 
   appendTo_div() {
@@ -64,6 +65,5 @@ const cll2 = new host(
   "rook h5",
   "ht"
 );
-//cll.init_tagsTo_create();
 cll.config_tagsTo_create();
 cll2.config_tagsTo_create();
