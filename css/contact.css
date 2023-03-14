@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
 
 :root {
-	--purple_bg: #c576f6;
-	--purple: #9417e2;
-	font-family: var(--ubuntu); 
 	background: gray;
+	--purple: #9417e2;
+	--purple_bg: #c576f6;
+	font-family: var(--ubuntu); 
 	--ubuntu: 'Ubuntu Condensed', sans-serif;
 }
 
@@ -12,67 +12,52 @@
 	margin: 0;
 	padding: 0;
 }
-h4 {
-	color: gray;
-	font-size: 16px;
-	width: 95%;
-}
 
 h3 {
-	font-size: 18px;
+	color: gray;
 }
 
-.contact {
-	padding: 10px;
-	width: 200px;
-	display: flex;
-	background: white;
-	flex-direction: column;
-	border-bottom: 1px groove #c1c1c1;
-}
-
-.contact:hover {
-	background: #c1c1c1;
-}
-
-.contact p {
-	width: 71px;
+p {
+	top: 5px;
+	width: 80px;
 	padding: 5px;
-	color: var(--purple);
-	font-size: 16px;
-	background: var(--purple_bg);
-	border-radius: 5px;
+	position: relative;
 	text-align: center;
+	border-radius: 15px;
+	color: var(--purple);
+	background: var(--purple_bg);
 }
 
-#co {
-	width: 20px;
-	height: 20px;
-	background: red;
-}
-
-
-
-.n_strg {
+.host {
+	width: 340px;
 	display: flex;
+	padding: 15px;
+	background: white;
 	flex-direction: row;
+	border-top: 2px groove #c1c1c1;
+	justify-content: space-around;
 }
 
-#cont {
-	max-height: 600px;
-	display: inline-block;
-	overflow-y: scroll;
-	overflow-x: hidden;
+.host > img {
+	width: 50px;
+	height: 50px;
 }
 
-#cont::-webkit-scrollbar {
+#host_info {
+	width: 71%;
+	display: flex;
+	flex-direction: column;
+	background: transparent;
+}
+
+#host::-webkit-scrollbar {
 	width: 12px;
 }
 
-::-webkit-scrollbar-thumb {
+#host::-webkit-scrollbar-thumb {
 	background: var(--purple);
 }
 
-#cont::-webkit-scrollbar-track {
+#host::-webkit-scrollbar-track {
 	background: orange;
 }
