@@ -2,8 +2,10 @@ doctype html
 html(lang='en')
 	head
 		title shogi
-		link(rel='stylesheet', href='css/shogi.css')
+		//-link(rel='stylesheet', href='css/shogi.css')
+		link(rel='stylesheet', href='css/contact.css')
 	body.shogi
-		audio(src='sound/shft.mp3', type='audio/mpeg', id='shft', controls)
-		audio(src='sound/erase.mp3', type='audio/mpeg', id='erase', controls)
-		script(src='board_config/shogi.js', type='module')
+	div#cont
+		//- audio(src='sound/shft.mp3', type='audio/mpeg', id='shft', controls)
+		//- audio(src='sound/erase.mp3', type='audio/mpeg', id='erase', controls)
+	script(src='scripts/contact/contacts.js', type='module')
