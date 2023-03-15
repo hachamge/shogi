@@ -1,1 +1,0 @@
-const hght:string = 'chihyi';
