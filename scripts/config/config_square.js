@@ -1,4 +1,4 @@
-import { en_sqr_chk, en_sqr_hght } from "./config_shft.js";
+import { en_sqr_hght } from "./config_shft.js";
 const sqr_grid = {};
 //drk
 sqr_grid["a8"] = "drk_rk.svg";
