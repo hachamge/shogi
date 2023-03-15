@@ -1,38 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
 
-:root {
-	--border-bg: white;
-}
-
-body {
-	/**
-		src: https://mycolor.space/gradient3?ori=to+right&hex=%23D16BA5&hex2=%232856AB&hex3=%235FFBF1&submit=submit
-	*/
-	background-size: cover;
-	background-image: linear-gradient(to right, #d16ba5, #bc65aa, #a460ad, #885daf, #675aaf, #5468bd, #3975c7, #0082cf, #00a2e2, #00c1ed, #00dff1, #5ffbf1);	
-}
-
 /** squares config 520x520 */
-.shogi {
+table.shogi {
 	cursor: default;
-	font-size: 60px;
 	border-spacing: 0;
 	text-align: center;
 	border-collapse: collapse;
 	font-family: 'Ubuntu Condensed', sans-serif;
-	/** background-color: var(--border-bg); **/
 }
 
 /** square heading: h1/c1 etc */
 .shogi th {
+	padding: 5px;
 	font-size: 20px;
 	font-family: inherit;
-}
-
-.shogi th img {
-	width: 55px;
-	height: 55px;
-	margin-right: 5px;
 }
 
 /** square rule:65x65 */ 

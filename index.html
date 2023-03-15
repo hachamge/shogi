@@ -2,9 +2,15 @@
 <html lang="en">
   <head>
     <title>shogi</title>
-    <link rel="stylesheet" href="css/host.css">
+    <link rel="stylesheet" href="css/gameBoard.css">
   </head>
-  <body class="shogi"></body>
-  <div id="ht"></div>
+  <body></body>
+  <div id="gameBoard">
+    <div id="board"></div>
+    <div id="host"></div>
+    <audio src="sound/shft.mp3" type="audio/mpeg" id="shft" controls></audio>
+    <audio src="sound/erase.mp3" type="audio/mpeg" id="erase" controls></audio>
+  </div>
   <script src="scripts/host/contacts.js" type="module"></script>
+  <script src="scripts/shogi.js" type="module"></script>
 </html>

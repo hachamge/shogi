@@ -8,6 +8,7 @@ export class host {
     this.shift = shift;
     this.timeAgo = timeAgo;
 		this.tagsTo_create = {img:'img', timeAgo: 'h3', nme:'h2', msg: 'h3', shft: 'p', div:'div'};
+		this.config_tagsTo_create();
   }
 
   config_tagsTo_create() {
@@ -43,7 +44,6 @@ export class host {
     host.append(this.tagsTo_create["img"]);
     host.append(this.tagsTo_create["div"]);
     host.setAttribute("class", "host");
-    console.log(host);
     document.getElementById(id).append(host);
   }
 } // #endif
@@ -54,7 +54,7 @@ const cll = new host(
   "Harrison Orne",
   "perfect knight move",
   "knight e5",
-  "ht"
+  "host"
 );
 
 const cll2 = new host(
@@ -63,7 +63,25 @@ const cll2 = new host(
   "Steffen Holm",
   "shift into h3",
   "rook h5",
-  "ht"
+  "host"
 );
-cll.config_tagsTo_create();
-cll2.config_tagsTo_create();
+
+const cll3 = new host(
+  "../../svg/beach.jpg",
+  "1 hr ago",
+  "Chihyi Oeau",
+  "blunder shifting rook",
+  "king e7",
+  "host"
+);
+
+const cll4 = new host(
+  "../../svg/flower.jpg",
+  "1 sec ago",
+  "Ragnar Lorikq",
+  "return bishop to c9",
+  "queen e5",
+  "host"
+);
+//cll.config_tagsTo_create();
+//cll2.config_tagsTo_create();

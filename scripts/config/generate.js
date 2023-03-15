@@ -22,7 +22,7 @@ export async function create_squares() {
       }
     });
 	crte_heading({tbody:tbody});
-  return prs_sqrs({ tbody: tbody, id: ".shogi" });
+  return prs_sqrs({ tbody: tbody, id: "#board" });
 }
 
 // create 65x65 sqrs h1/c7 append to tr
@@ -48,7 +48,6 @@ function prs_sqrs({ tbody, id }) {
 function crte_heading({ tbody }) {
 	const tr = document.createElement('tr');
 	const th = document.createElement('th');
-	prs_img({th:th});
 	tr.append(th);
 
 	heading.forEach(ch => {
@@ -57,11 +56,4 @@ function crte_heading({ tbody }) {
 		tr.append(td);
 	});
 	tbody.append(tr);
-}
-
-// chess.com png 
-function prs_img({ th }) {
-	const img = document.createElement('img');
-	img.src = '../../svg/martin.png';
-	th.append(img);
 }
