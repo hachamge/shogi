@@ -1,4 +1,4 @@
-class host {
+export class host {
   // id referes to div_id
   constructor(img, timeAgo, nme, msg, shift, id) {
     this.id = id;
