@@ -1,23 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
-
-:root {
-	background: gray;
-	--purple: #9417e2;
-	--purple_bg: #c576f6;
-	font-family: var(--ubuntu); 
-	--ubuntu: 'Ubuntu Condensed', sans-serif;
-}
-
-* {
-	margin: 0;
-	padding: 0;
-}
-
 /** the container containing hosts' */
-#host {
-	height: 520px;
+div#host {
+	width: 25%;
+	height: 100%;
 	overflow-x: hidden;
 	overflow-y: scroll;
+	border: 2px dotted var(--matte);
 }
 
 /** the first (user) host */

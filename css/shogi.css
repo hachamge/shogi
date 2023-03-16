@@ -1,12 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap");
-
 /** squares config 520x520 */
 table.shogi {
   cursor: default;
   border-spacing: 0;
   text-align: center;
   border-collapse: collapse;
-  font-family: "Ubuntu Condensed", sans-serif;
+  font-family: var(--ubuntu);
 }
 
 /** square heading: h1/c1 etc */

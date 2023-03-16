@@ -1,13 +1,19 @@
 doctype html
 html(lang='en')
 	head
-		title shogi
-		link(rel='stylesheet', href='css/gameBoard.css')
+		title chess
+		link(rel='stylesheet', href='css/app.css')
 	body
-	div#gameBoard
-		div#board
-		div#host
-		audio(src='sound/shft.mp3', type='audio/mpeg', id='shft', controls)
-		audio(src='sound/erase.mp3', type='audio/mpeg', id='erase', controls)
-	script(src='scripts/host/host.js', type='module')
+		audio(src='sound/shft.mp3', type='audio/mpeg', id='shft')
+		audio(src='sound/erase.mp3', type='audio/mpeg', id='erase') 
+		div#chessLayout
+			div#navLayout
+			div#gridLayout
+				div#header
+				div#mainLayout
+					div#host
+					div#boardLayout
+					div#graphLayout
 	script(src='scripts/shogi.js', type='module')
+	script(src='scripts/host/host.js', type='module')
+	script(src='scripts/charts/app.js', type='module')

@@ -22,7 +22,7 @@ export async function create_squares() {
       }
     });
 	crte_heading({tbody:tbody});
-  return prs_sqrs({ tbody: tbody, id: "#board" });
+  return prs_sqrs({ tbody: tbody, id: "#boardLayout" });
 }
 
 // create 65x65 sqrs h1/c7 append to tr

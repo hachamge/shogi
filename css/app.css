@@ -1,0 +1,9 @@
+@import url('config.css');
+
+@import url('host.css');
+@import url('shogi.css');
+@import url('navLayout.css');
+@import url('gridLayout.css');
+@import url('graphLayout.css');
+@import url('chessLayout.css');
+@import url('boardLayout.css');

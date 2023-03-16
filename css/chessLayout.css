@@ -1,0 +1,7 @@
+#chessLayout {
+	width: 95%;
+	height: 95%;
+	display: flex;
+	position: absolute;
+	flex-direction: row;
+}

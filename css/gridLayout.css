@@ -1,0 +1,22 @@
+div#gridLayout {
+	width: 90%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--white);
+}
+
+div#header {
+	width: 100%;
+	height: 10%;
+	border: 2px dotted var(--matte);
+}
+
+/** include host/shogi/graph */
+div#mainLayout {
+	width: 100%;
+	height: 90%;
+	display: flex;
+	flex-direction: row;
+	border: 2px dotted var(--matte);
+}
