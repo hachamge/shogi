@@ -1,41 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap");
 
 /** squares config 520x520 */
 table.shogi {
-	cursor: default;
-	border-spacing: 0;
-	text-align: center;
-	border-collapse: collapse;
-	font-family: 'Ubuntu Condensed', sans-serif;
+  cursor: default;
+  border-spacing: 0;
+  text-align: center;
+  border-collapse: collapse;
+  font-family: "Ubuntu Condensed", sans-serif;
 }
 
 /** square heading: h1/c1 etc */
 .shogi th {
-	padding: 5px;
-	font-size: 20px;
-	font-family: inherit;
+  padding: 5px;
+  font-size: 20px;
+  font-family: inherit;
 }
 
-/** square rule:65x65 */ 
+/** square rule:65x65 */
 .shogi td {
-	width: 65px;
-	height: 65px;
-	transition: 1s;
-	font-size: 25px;
-	box-sizing: border-box;
-	background-color: red;
+  width: 65px;
+  height: 65px;
+  transition: 1s;
+  font-size: 25px;
+  box-sizing: border-box;
+  background-color: red;
 }
 
 /** square: knght/kng etc */
 .shogi td img {
-	top: 7px;
-	width: 45px;
-	height: 45px;
-	transition: 2s;
-	position: relative;	
+  top: 7px;
+  width: 45px;
+  height: 45px;
+  transition: 2s;
+  position: relative;
 }
 
 /** sound audio: shfting/erasing pns' */
 :is(#shft, #erase) {
-	display: none;
+  display: none;
 }
