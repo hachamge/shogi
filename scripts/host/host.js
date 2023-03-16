@@ -83,5 +83,13 @@ const cll4 = new host(
   "queen e5",
   "host"
 );
-//cll.config_tagsTo_create();
-//cll2.config_tagsTo_create();
+
+const cll5 = new host(
+  "../../svg/beach.jpg",
+  "2 hr ago",
+  "Kyvsif Zyivtek",
+  "check in 1 min",
+  "knight c5",
+  "host"
+);
+
