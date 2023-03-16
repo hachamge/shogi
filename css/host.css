@@ -4,7 +4,6 @@ div#host {
 	height: 100%;
 	overflow-x: hidden;
 	overflow-y: scroll;
-	border: 2px dotted var(--matte);
 }
 
 /** the first (user) host */
