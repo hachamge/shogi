@@ -14,13 +14,12 @@
 
 .coordinate_graph > p {
 	left: 15px;
-	color: #D3D3D3;
+	color: gray;
 	float: left;
 	position: relative;
 }
 
 .coordinate_graph > input {
-	left: -45px;
 	border: none;
 	padding: 5px;
 	color: #4B0082;

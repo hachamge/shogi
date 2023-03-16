@@ -39,7 +39,7 @@ export class coordinate_graph {
     div.append(graph);
     div.prepend(input);
     this.graphs.push(div);
-    document.querySelector("graphLayout").append(div);
-    this.graph({ id:this.id});
+    document.querySelector(".coordinate_graph").prepend(div);
+    this.graph({ id:'#chart'});
   }
 }
