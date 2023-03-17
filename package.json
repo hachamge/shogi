@@ -8,6 +8,7 @@
     "jest": "^29.4.3"
   },
   "dependencies": {
+    "alert": "^5.1.4",
     "time-ago": "^0.2.1",
     "timer-node": "^5.0.7"
   }
