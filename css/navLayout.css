@@ -1,8 +1,27 @@
 #navLayout {
-	width: 10%;
+	width: 15%;
 	height: 100%;
 	display: flex;
+	position: relative;
+	align-items: center;
 	flex-direction: column;
 	border-radius: 15px 0 0 15px;
 	background-color: var(--matte);
+}
+
+#login {
+	color: white;
+	width: 85%;
+	display: flex;
+	bottom: 25px;
+	align-items: center;
+	position: absolute;
+	flex-direction: row;
+}
+
+#login > img {
+	width: 45px;
+	height: 45px;
+	margin-left: 10px;
+	margin-right: 20px;
 }
