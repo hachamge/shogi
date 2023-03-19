@@ -2,6 +2,18 @@ div#graphLayout {
 	width: 30%;
 	height: 100%;
 	display: flex;
+	position: relative;
 	align-items: center;
 	flex-direction: column;
+}
+
+button#play {
+	color: white;
+	width: 95%;
+	height: 50px;
+	bottom: 15px;
+	font-size: 19px;
+	background: green;
+	position: absolute;
+	font-family: inherit;
 }
