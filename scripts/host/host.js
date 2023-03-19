@@ -1,3 +1,5 @@
+import { en_hostName_chk } from './click_event.js';
+
 export class host {
   // id referes to div_id
   constructor(img, timeAgo, nme, msg, shift, id) {
@@ -29,7 +31,7 @@ export class host {
     this.tagsTo_create["timeAgo"].innerText = this.timeAgo;
     this.tagsTo_create["img"].setAttribute('loading', 'lazy');
   }
-
+/** insert the timeAgo, image and message into container: host_info*/
   appendTo_div() {
     for (const tag in this.tagsTo_create) {
       if (this.tagsTo_create[tag] instanceof HTMLImageElement) continue;
@@ -39,12 +41,16 @@ export class host {
     this.tagsTo_create["div"].setAttribute("id", "host_info");
   }
 
+/** insert the host_info div along with the profile picture.
+ the id is used to insert the container div (host) into the div that
+ is labeled by the id that is passed in.*/
   append({ id }) {
     const host = document.createElement("div");
     host.append(this.tagsTo_create["img"]);
     host.append(this.tagsTo_create["div"]);
     host.setAttribute("class", "host");
     document.getElementById(id).append(host);
+    en_hostName_chk({hostDiv:host});
   }
 } // #endif
 
