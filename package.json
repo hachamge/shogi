@@ -10,6 +10,7 @@
   "dependencies": {
     "alert": "^5.1.4",
     "sql": "^0.78.0",
+    "taffy": "^2.6.2",
     "time-ago": "^0.2.1",
     "timer-node": "^5.0.7"
   }
