@@ -88,8 +88,17 @@ const cll5 = new host(
   "../../svg/beach.jpg",
   "2 hr ago",
   "Kyvsif Zyivtek",
-  "check in 1 min",
+  "check in 1 min?",
   "knight c5",
+  "host"
+);
+
+const cll6 = new host(
+  "../../svg/beach.jpg",
+  "2 day ago",
+  "Voytek Syvio",
+  "hate the knight!",
+  "rook c5",
   "host"
 );
 
