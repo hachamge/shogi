@@ -27,6 +27,9 @@ div#boardLayout {
 }
 
 #gameAgainst h2 {
+	padding: 5px;
+	color: white;
+	background: var(--matte);
 	order: 2;
 }
 
