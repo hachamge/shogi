@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "alert": "^5.1.4",
+    "sql": "^0.78.0",
     "time-ago": "^0.2.1",
     "timer-node": "^5.0.7"
   }
