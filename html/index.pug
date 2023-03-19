@@ -10,15 +10,19 @@ html(lang='en')
 			div#navLayout
 				div#login
 					img(src='svg/beach.jpg', alt='kyvsif')
-					h2 Kyvsif
+					p Kyvsif
 			div#gridLayout
 				div#header
 				div#mainLayout
 					div#host
 					div#boardLayout
+						div#gameAgainst
+							h2 Steffen Holm
+							img(src='svg/flower.jpg')
+						div#gameAgainstCurrentUser
+							h2 Kysif zyivtek
+							img(src='svg/beach.jpg')
 					div#graphLayout
-						//-div.coordinate_graph
-							div#chart
 						button(id='play') + Play
 	script(src='scripts/shogi.js', type='module')
 	script(src='scripts/host/host.js', type='module')
