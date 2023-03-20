@@ -1,3 +1,4 @@
+import { ago } from './timeAgo.js';
 import { en_hostName_chk } from './click_event.js';
 
 export class host {
@@ -9,6 +10,7 @@ export class host {
     this.msg = msg;
     this.shift = shift;
     this.timeAgo = timeAgo;
+    this.timeStamp = timeAgo;
 		this.tagsTo_create = {img:'img', timeAgo: 'h3', nme:'h2', msg: 'h3', shft: 'p', div:'div'};
 		this.config_tagsTo_create();
   }
@@ -28,7 +30,7 @@ export class host {
     this.tagsTo_create["nme"].innerText = this.nme;
     this.tagsTo_create["msg"].innerText = this.msg;
     this.tagsTo_create["shft"].innerText = this.shift;
-    this.tagsTo_create["timeAgo"].innerText = this.timeAgo;
+    this.tagsTo_create["timeAgo"].innerText = ago(this.timeAgo);
     this.tagsTo_create["img"].setAttribute('loading', 'lazy');
   }
 /** insert the timeAgo, image and message into container: host_info*/
@@ -51,9 +53,31 @@ export class host {
     host.setAttribute("class", "host");
     document.getElementById(id).append(host);
     en_hostName_chk({hostDiv:host});
+    this.enableRepeatedUpdateOfTimeStamp();
+  }
+
+  //update the timestamp every (5 seconds)
+  enableRepeatedUpdateOfTimeStamp() {
+    setInterval(()=> {
+      this.tagsTo_create['timeAgo'].innerText = ago(this.timeStamp);
+    }, 5000);
   }
 } // #endif
 
+const hosts = ['Harrison Orne', 'Steffen Holm', 'Oeau Eaue', 'Vilsinn Volu',
+  'Skald Olberta', 'Guaue Furhe'
+  ];
+hosts.forEach((name, index) => {
+  const cll = new host(
+    "../../svg/flower.jpg",
+    new Date(),
+    name,
+    'hate the knight?',
+    'knight c' + index,
+    'host'
+    );
+})
+/*
 const cll = new host(
   "../../svg/beach.jpg",
   "2 min ago",
@@ -107,4 +131,5 @@ const cll6 = new host(
   "rook c5",
   "host"
 );
+*/
 
